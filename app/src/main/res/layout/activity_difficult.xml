@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/meal_background"
+    tools:context=".view.DifficultActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/heading_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Выбери уровень"
+                android:textColor="@color/purple_700"
+                android:textSize="34sp" />
+
+            <Button
+                android:id="@+id/btn_lvlEasy"
+                style="@style/primary_button"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_gradient"
+                android:text="Легкий"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn_lvlMiddle"
+                style="@style/primary_button"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_gradient"
+                android:text="Средний"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/btn_lvlDifficult"
+                style="@style/primary_button"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button_gradient"
+                android:text="Сложный"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
